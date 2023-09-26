@@ -4,13 +4,14 @@
 
 .slider {
     background-color: red;
+    font-family: sans-serif;
 }
 .slider .slider__slides {}
 .slider .slider__nav {}
 
 .slides {
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 100%;
     min-height: var(--sliderHeight);
 }
@@ -34,7 +35,14 @@
     left: 200%;
 }
 
-.slides .slides__box{}
+.slides .slides__box{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
 .slides .slides__hdl {}
 .slides .slides__lead {}
 .slides .slides__link {}
